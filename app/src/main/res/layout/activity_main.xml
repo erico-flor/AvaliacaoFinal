@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView_evento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eventos" />
+
+    <TextView
+        android:id="@+id/textView_pesquisa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filtrar evento ou cidade" />
+
+    <EditText
+        android:id="@+id/editText_pesquisa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digite o evento ou cidade que deseja filtrar"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btn_buscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickBuscar"
+        android:text="Buscar" />
+
+    <Button
+        android:id="@+id/btn_buscarFiltro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onCLickBuscarOrdem"
+        android:text="Odenar busca" />
+
+    <ListView
+        android:id="@+id/listView_eventos"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_eventos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickEventos"
+        android:text="Eventos" />
+
+    <Button
+        android:id="@+id/btn_local"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickLocal"
+        android:text="Local" />
+
+</LinearLayout>
